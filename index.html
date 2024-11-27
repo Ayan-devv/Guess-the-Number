@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess My Number</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🎯 Guess My Number!</h1>
+        <p class="hint">(Pick a number between 1 and 20)</p>
+      </header>
+
+      <main>
+        <div class="game">
+          <div class="question-box">?</div>
+          <input class="input-field" type="number" placeholder="Your guess" />
+          <button class="check-btn">Check</button>
+          <p class="feedback">🤔 Start guessing...</p>
+        </div>
+
+        <div class="stats">
+          <p class="score-text">💯 Score: <span>20</span></p>
+        </div>
+
+        <button type="button" class="again-btn">🔄 Play Again</button>
+      </main>
+
+      <footer>
+        <p class="watermark">Designed and developed by Muhammad Ayan</p>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

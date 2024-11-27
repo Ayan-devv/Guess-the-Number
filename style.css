@@ -1,0 +1,156 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(120deg, #2c3e50, #4ca1af);
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header .hint {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.game {
+  margin: 20px 0;
+}
+
+.question-box {
+  background: white;
+  color: #2c3e50;
+  font-size: 3rem;
+  font-weight: bold;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-field {
+  width: 100%;
+  max-width: 250px;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  margin: 15px 0;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  box-shadow: 0px 0px 8px 2px #4ca1af;
+}
+
+.check-btn {
+  background: #4ca1af;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.check-btn:hover {
+  background: #2c3e50;
+}
+
+.feedback {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.stats {
+  margin: 20px 0;
+}
+
+.score-text {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.again-btn {
+  background: #ff7675;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.again-btn:hover {
+  background: #d63031;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+}
+
+.watermark {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .question-box {
+    height: 60px;
+    width: 60px;
+    font-size: 2.5rem;
+  }
+
+  .input-field {
+    font-size: 1rem;
+  }
+
+  .check-btn,
+  .again-btn {
+    font-size: 0.9rem;
+  }
+
+  .watermark {
+    font-size: 0.7rem;
+  }
+}
